@@ -1,0 +1,30 @@
+{
+  "name": "smart-plug-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "miio": "^0.15.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "engines": {
+    "node": "12.18.3"
+  },
+  "author": "Godwin and Team",
+  "license": "ISC"
+}
