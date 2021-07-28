@@ -28,9 +28,7 @@ exports.discover = (req, res) => {
           return res.json({ message: "power is", on });
         })
         .catch((err) => {
-          return res.status(500).json({
-            message: err,
-          });
+          return console.log(err);
         });
     }
     return res.json({ message: "No devices found available" });
@@ -59,9 +57,7 @@ exports.discover = (req, res) => {
           return res.json({ message: "power is", on });
         })
         .catch((err) => {
-          return res.status(500).json({
-            message: err,
-          });
+          return console.log(err);
         });
     }
     return res.json({ message: "No devices found unavailable" });
@@ -88,16 +84,12 @@ exports.fan = (req, res) => {
           return res.json({ message: "power is", on });
         })
         .catch((err) => {
-          return res.status(500).json({
-            message: err,
-          });
+          return console.log(err);
         });
       return res.json({ message: "connected to", device });
     })
     .catch((err) => {
-      return res.status(500).json({
-        message: err.message,
-      });
+      return console.log(err);
     });
 
     return res.json({ message: "No devices found" });
