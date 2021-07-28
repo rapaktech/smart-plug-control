@@ -33,7 +33,7 @@ exports.discover = (req, res) => {
           });
         });
     }
-
+    return res.json({ message: "No devices found available" });
   });
 
   
@@ -64,8 +64,10 @@ exports.discover = (req, res) => {
           });
         });
     }
-
+    return res.json({ message: "No devices found unavailable" });
   });
+
+  return res.json({ message: "No devices found" });
 };
 
 
@@ -97,6 +99,8 @@ exports.fan = (req, res) => {
         message: err.message,
       });
     });
+
+    return res.json({ message: "No devices found" });
 };
 
 
