@@ -7,7 +7,7 @@ fanConnect.addEventListener('submit', async function (event) {
 
     // Get data
     const fanConnectSubmit = document.getElementById('fan-connect-submit').value;
-    const url = `http://localhost:9005/fan`;
+    const url = `https://immense-ocean-88742.herokuapp.com/fan`;
 
     // Pass data into object 
     const data = { fanConnectSubmit };
@@ -36,7 +36,7 @@ fanSwitch.addEventListener('submit', async function (event) {
 
     // Get data
     const fanSwitchSubmit = document.getElementById('fan-switch-submit').value;
-    const url = `http://localhost:9005/discover`;
+    const url = `https://immense-ocean-88742.herokuapp.com/discover`;
 
     // Pass data into object 
     const data = { fanSwitchSubmit };
